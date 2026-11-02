@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Array and Date Functions</title>
+  </head>
+  <body>
+    <script>
+      // Array Object
+      let arr = [1, 2, 9, 5, 8];
+
+      document.write("<h3>Array Functions</h3>");
+      document.write("Original Array: " + arr + "<br>");
+      document.write("Length: " + arr.length + "<br>");
+
+      arr.push(60);
+      document.write("After Push: " + arr + "<br>");
+
+      arr.pop();
+      document.write("After Pop: " + arr + "<br>");
+
+      arr.unshift(5);
+      document.write("After Unshift: " + arr + "<br>");
+
+      arr.shift();
+      document.write("After Shift: " + arr + "<br>");
+
+      document.write("Index of 30: " + arr.indexOf(30) + "<br>");
+      document.write("Sorted Array: " + arr.sort() + "<br>");
+
+      // Date Object
+      let d = new Date();
+
+      document.write("<h3>Date Functions</h3>");
+      document.write("Current Date: " + d + "<br>");
+      document.write("Date: " + d.getDate() + "<br>");
+      document.write("Month: " + (d.getMonth() + 1) + "<br>");
+      document.write("Year: " + d.getFullYear() + "<br>");
+      document.write("Hours: " + d.getHours() + "<br>");
+      document.write("Minutes: " + d.getMinutes() + "<br>");
+      document.write("Seconds: " + d.getSeconds() + "<br>");
+    </script>
+  </body>
+</html>

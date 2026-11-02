@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #secretContent {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="secretContent">
+    <h1>🎉 Secret Content</h1>
+    <p>Ab ye visible hai!</p>
+  </div>
+
+  <script>
+    window.SHOW_SECRET = false;
+
+    window.showSecret = function () {
+      if (window.SHOW_SECRET === true) {
+        document.getElementById("secretContent").style.display = "block";
+      }
+    };
+  </script>
+
+</body>
+</html>

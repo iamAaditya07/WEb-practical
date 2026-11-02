@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of Frames</title>
+</head>
+<body>
+
+    <h1 align="center">Different Types of Frames</h1>
+
+    <h2>1. Floating Frame (Iframe)</h2>
+    <iframe src="https://www.wikipedia.org"
+            width="500"
+            height="200"
+            title="Floating Frame">
+    </iframe>
+
+    <hr>
+
+    <h2>2. Navigation Frame</h2>
+    <iframe src="nav.html" width="200" height="150">
+    </iframe>
+
+    <hr>
+
+    <h2>3. Mixed Frame</h2>
+
+    <iframe srcdoc="
+        <h2>Welcome to My Website</h2>
+        <p>This is the main content area.</p>
+        <p>Different frames are combined here.</p>
+    " width="500" height="200">
+    </iframe>
+
+</body>
+</html>
