@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exception Handling in JavaScript</title>
+  </head>
+  <body>
+    <h2>Exception Handling in JavaScript</h2>
+
+    <p>Enter two numbers to perform division:</p>
+
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <br /><br />
+
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <br /><br />
+
+    <button onclick="divide()">Divide</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+      function divide() {
+        try {
+          let a = Number(document.getElementById("num1").value);
+          let b = Number(document.getElementById("num2").value);
+
+          if (
+            document.getElementById("num1").value === "" ||
+            document.getElementById("num2").value === ""
+          ) {
+            throw "Please enter both numbers!";
+          }
+
+          if (b == 0) {
+            throw "Division by zero is not allowed!";
+          }
+
+          let c = a / b;
+
+          document.getElementById("result").innerHTML = "Result: " + c;
+        } catch (error) {
+          document.getElementById("result").innerHTML = "Error: " + error;
+        } finally {
+          console.log("Program execution completed.");
+        }
+      }
+    </script>
+  </body>
+</html>
