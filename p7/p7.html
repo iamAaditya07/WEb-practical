@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sorting</title>
+</head>
+<body>
+
+<h2>Sorting Array Elements</h2>
+
+<script>
+    // User-defined function
+    function sortArray(arr) 
+    {
+        arr.sort(function(a, b) {
+            return a - b;
+        });
+        return arr;
+    }
+
+    let numbers = [5, 8, 9, 2,1,11];
+
+    document.write("Original Array: " + numbers + "<br>");
+
+    let sorted = sortArray(numbers);
+
+    document.write("Sorted Array: " + sorted);
+</script>
+
+</body>
+</html>
